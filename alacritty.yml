@@ -1,4 +1,5 @@
-# This alacritty config was used for windows
+# This alacritty config was used for windows 
+# in windows this should be place at C:\Users\Lanex\AppData\Roaming\alacritty
 
 # Colors (Night Owl)
 colors:
