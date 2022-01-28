@@ -1,5 +1,5 @@
-# This alacritty config was used for windows 
-# in windows this should be place at C:\Users\Lanex\AppData\Roaming\alacritty
+# env:
+#   TERM: xterm-256color
 
 # Colors (Night Owl)
 colors:
@@ -44,3 +44,6 @@ shell:
   program: "C:\\Program Files\\Git\\bin\\bash.exe"
 
 working_directory: "C:\\Users\\Lanex"
+
+scrolling:
+  history: 10000
