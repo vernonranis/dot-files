@@ -18,3 +18,5 @@ sudo dnf install postgresql-server -y
 
 echo -e "${RED}Installing ViM \n${NC}"
 sudo dnf install vim-enhanced -y
+
+echo -e "${RED}Configuring .bashrc \n${NC}"
