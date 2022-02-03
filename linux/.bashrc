@@ -1,3 +1,5 @@
+#!/bin/bash
+
 get_git_branch () {
     if git status &>/dev/null && which git &>/dev/null; then
         echo " (`git rev-parse --abbrev-ref HEAD`)"
