@@ -10,7 +10,7 @@ cd $HOME
 
 #setting the terminal title to PWD # NOT WORKING if using with tmux
 PS1="\[\033]0;\w\007\]";
-PS1+="[\D{%m/%d/%y - %r}] "; # date and time
+PS1+="\n[\D{%m/%d/%y - %r}] "; # date and time
 PS1+="\[\033[32m\]\W\[\033[33m\]\$(parse_git_branch)\[\033[00m\]";
 PS1+=" $ ";
 export PS1;
