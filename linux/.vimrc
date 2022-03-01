@@ -1,6 +1,6 @@
 set tabstop=4
 set timeoutlen=2000
-set mouse=
+set mouse=a
 
 syntax enable
 
