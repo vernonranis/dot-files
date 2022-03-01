@@ -21,23 +21,28 @@ alias ll="ls -la"
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias \
-	..="cd .." \
-	...="cd ../.." \
-	....="cd ../../.." \
-	.....="cd ../../../.." \
-	-="cd -" 
+    ..="cd .." \
+    ...="cd ../.." \
+    ....="cd ../../.." \
+    .....="cd ../../../.." \
+    -="cd -"
 
 # Tmux related aliases
 alias \
-	tn="tmux -u new" \
-	tnn="tmux -u new -s" \
-	ta="tmux -u attach" \
-	tt="vim ~/.tmux.conf"
+    tn="tmux -u new" \
+    tnn="tmux -u new -s" \
+    ta="tmux -u attach" \
+    tt="vim ~/.tmux.conf"
 
 # bashrc related aliases
 alias \
-	bb="vim ~/.bashrc"\
-	bs="source ~/.bashrc && echo -e 'bashrc sourced'"
+    bb="vim ~/.bashrc"\
+    bs="source ~/.bashrc && echo -e 'bashrc sourced'"
+
+# vimrc related aliases
+alias \
+    vv="vim ~/.vimrc" \
+    vs="source ~/.vimrc && echo - 'vimrc sourced'"
 
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
