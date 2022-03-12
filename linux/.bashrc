@@ -18,6 +18,7 @@ export TERM=xterm-256color
 
 # My custom aliases
 alias ll="ls -la"
+alias ssha="eval $(ssh-agent) && ssh-add"
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias \
