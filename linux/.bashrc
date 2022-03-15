@@ -6,8 +6,6 @@ parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-cd $HOME
-
 #setting the terminal title to PWD # NOT WORKING if using with tmux
 PS1="\[\033]0;\w\007\]";
 PS1+="\n[\D{%m/%d/%y - %r}] "; # date and time
@@ -44,6 +42,26 @@ alias \
 alias \
     vv="vim ~/.vimrc" \
     vs="source ~/.vimrc && echo - 'vimrc sourced'"
+
+# docker related aliases
+alias d="docker"
+
+# docker-compose related aliases
+alias dc="docker-compose"
+
+# ansible related aliases
+alias \
+    a="ansible all" \
+    ap="ansible-playbook"
+
+# kubectl related aliases
+alias k="kubectl"
+
+# istio related aliases
+alias i="istioctl"
+
+# helm related aliases
+alias h="helm"
 
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
