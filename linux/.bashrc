@@ -95,7 +95,6 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
@@ -140,7 +139,7 @@ export TERM=xterm-256color
 
 # My custom aliases
 alias ll="ls -la"
-alias ssha="eval $(ssh-agent) && ssh-add"
+alias ssha='eval $(ssh-agent) && ssh-add'
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias \
@@ -177,7 +176,8 @@ alias dc="docker-compose"
 # ansible related aliases
 alias \
     a="ansible all" \
-    ap="ansible-playbook"
+    ap="ansible-pull"\
+    apb="ansible-playbook"
 
 # kubectl related aliases
 alias k="kubectl"
@@ -187,6 +187,9 @@ alias i="istioctl"
 
 # helm related aliases
 alias h="helm"
+
+# git related aliases
+alias g='git'
 
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
