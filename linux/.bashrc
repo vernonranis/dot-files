@@ -164,6 +164,7 @@ alias \
 
 # vimrc related aliases
 alias \
+    v="vim"
     vv="vim ~/.vimrc" \
     vs="source ~/.vimrc && echo - 'vimrc sourced'"
 
