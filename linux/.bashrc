@@ -155,6 +155,12 @@ alias \
     tnn="tmux -u new -s" \
     ta="tmux -u attach" \
     tt="vim ~/.tmux.conf"
+    
+# transmission related aliases
+alias \
+   tmd="transmission-daemon" \
+   tmr="transmission-remote"
+
 
 # bashrc related aliases
 alias \
