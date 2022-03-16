@@ -161,7 +161,9 @@ alias \
     vs="source ~/.vimrc && echo - 'vimrc sourced'"
 
 # docker related aliases
-alias d="docker"
+alias \
+   d="docker" \
+   drin="docker rmi $(docker images | grep none | awk '{ print $3 }')"
 
 # docker-compose related aliases
 alias dc="docker-compose"
