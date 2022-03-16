@@ -116,23 +116,10 @@ parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-# Branch Status Cheat Sheet
-# =: Local branch is up to date with the remote version
-# *: Updated files need to be staged
-# +: Staged files need to be committed
-# >: Local branch is ahead of remote branch -- git push
-# <: Remote branch is ahead of local branch -- git pull
-# <>: Remote and local branches are in conflict or otherwise diverged
-
 #setting the terminal title to PWD # NOT WORKING if using with tmux
-export GIT_PS1_SHOWDIRTYSTATE='y'
-export GIT_PS1_SHOWSTASHSTATE='y'
-export GIT_PS1_SHOWUNTRACKEDFILES='y'
-export GIT_PS1_DESCRIBE_STYLE='contains'
-export GIT_PS1_SHOWUPSTREAM='auto'
 PS1="\[\033]0;\w\007\]";
 PS1+="\n[\D{%m/%d/%y - %r}] "; # date and time
-PS1+="\[\033[32m\]\W\[\033[33m\]\$(__git_ps1)\[\033[00m\]";
+PS1+="\[\033[32m\]\W\[\033[33m\]\$(parse_git_branch)\[\033[00m\]";
 PS1+=" $ ";
 export PS1;
 export TERM=xterm-256color
