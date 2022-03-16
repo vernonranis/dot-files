@@ -163,7 +163,7 @@ alias \
 # docker related aliases
 alias \
    d="docker" \
-   drin="docker rmi $(docker images | grep none | awk '{ print $3 }')"
+   drin='docker rmi $(docker images | grep none | awk "{ print $3 }")'
 
 # docker-compose related aliases
 alias dc="docker-compose"
