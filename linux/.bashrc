@@ -18,6 +18,7 @@ shopt -s histappend
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=1000
 HISTFILESIZE=2000
+HISTTIMEFORMAT="%Y-%m-%d %T --- "
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -123,6 +124,7 @@ PS1+="\[\033[32m\]\W\[\033[33m\]\$(parse_git_branch)\[\033[00m\]";
 PS1+=" $ ";
 export PS1;
 export TERM=xterm-256color
+export EDITOR=vim
 
 # My custom aliases
 alias ll="ls -la"
