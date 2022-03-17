@@ -151,6 +151,8 @@ alias \
    tmd="transmission-daemon" \
    tmr="transmission-remote"
 
+# ranger related aliases
+alias r="ranger"
 
 # bashrc related aliases
 alias \
