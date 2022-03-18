@@ -152,7 +152,7 @@ alias \
    tmr="transmission-remote"
 
 # ranger related aliases
-alias r="ranger"
+alias r='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 
 # bashrc related aliases
 alias \
