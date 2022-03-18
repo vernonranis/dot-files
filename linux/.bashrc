@@ -193,11 +193,17 @@ alias i="istioctl"
 # helm related aliases
 alias h="helm"
 
-# git related aliases
+# minikube related aliases
 alias \
    m='minikube' \
    mstat='minikube status' \
    mdenv='eval $(minikube -p minikube docker-env)'
+   
+# git related aliases
+alias \
+   g='git' \
+   gc='git clone' \
+   gagc='git add . && git commmit -m'
 
 # minikube related aliases
 
