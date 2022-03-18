@@ -204,6 +204,10 @@ alias \
    g='git' \
    gc='git clone' \
    gagc='git add . && git commmit -m'
+   
+# curl related aliases
+alias \
+   curlstat='curl -o /dev/null -s -w "%{http_code}\n"' \
 
 # minikube related aliases
 
