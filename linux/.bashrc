@@ -183,7 +183,9 @@ alias \
     aping='ansible all -m ping'
 
 # kubectl related aliases
-alias k="kubectl"
+alias \
+   k="kubectl" \
+   kall='kubectl get all -A'
 
 # istio related aliases
 alias i="istioctl"
