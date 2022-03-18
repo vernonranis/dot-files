@@ -179,7 +179,8 @@ alias dc="docker-compose"
 alias \
     a="ansible all" \
     ap="ansible-pull"\
-    apb="ansible-playbook"
+    apb="ansible-playbook" \
+    aping='ansible all -m ping'
 
 # kubectl related aliases
 alias k="kubectl"
