@@ -194,7 +194,12 @@ alias i="istioctl"
 alias h="helm"
 
 # git related aliases
-alias g='git'
+alias \
+   m='minikube' \
+   mstat='minikube status' \
+   mdenv='eval $(minikube -p minikube docker-env)'
+
+# minikube related aliases
 
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
