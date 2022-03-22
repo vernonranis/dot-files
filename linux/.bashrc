@@ -197,7 +197,7 @@ alias h="helm"
 alias \
    m='minikube' \
    mstat='minikube status' \
-   mdenv='eval $(minikube -p minikube docker-env)'
+   mdenv='eval $(minikube -p minikube docker-env)' \
    mdenvu='eval $(minikube -p minikube docker-env --unset)'
    
 # git related aliases
@@ -208,7 +208,8 @@ alias \
    
 # curl related aliases
 alias \
-   curlstat='curl -o /dev/null -s -w "%{http_code}\n"' \
+   c='curl'
+   cstat='curl -o /dev/null -s -w "%{http_code}\n"' 
 
 # minikube related aliases
 
