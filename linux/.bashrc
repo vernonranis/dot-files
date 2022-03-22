@@ -161,7 +161,7 @@ alias \
 
 # vimrc related aliases
 alias \
-    v="vim"
+    v="vim" \
     vv="vim ~/.vimrc" \
     vs="source ~/.vimrc && echo - 'vimrc sourced'"
 
@@ -208,7 +208,7 @@ alias \
    
 # curl related aliases
 alias \
-   c='curl'
+   c='curl' \
    cstat='curl -o /dev/null -s -w "%{http_code}\n"' 
 
 # minikube related aliases
