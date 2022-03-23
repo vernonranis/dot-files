@@ -206,7 +206,7 @@ alias \
 alias \
    g='git' \
    gc='git clone' \
-   gagc='git add . && git commmit -m'
+   gagc='git add . && git commit -m'
    
 # curl related aliases
 alias \
