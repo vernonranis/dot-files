@@ -175,7 +175,11 @@ alias \
    dr='docker run'
 
 # docker-compose related aliases
-alias dc="docker-compose"
+alias \
+   dc="docker-compose" \
+   dcu='docker-compose up' \
+   dcud='docker-compose up -d' \
+   dcd='docker-compose down' 
 
 # ansible related aliases
 alias \
