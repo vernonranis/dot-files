@@ -193,7 +193,11 @@ alias \
 alias i="istioctl"
 
 # helm related aliases
-alias h="helm"
+alias \
+  h="helm" \
+  hls='helm ls' \
+  hi='helm install' \
+  hu='helm uninstall'
 
 # minikube related aliases
 alias \
