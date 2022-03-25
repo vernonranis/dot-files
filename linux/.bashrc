@@ -215,7 +215,9 @@ alias \
 alias \
    g='git' \
    gc='git clone' \
-   gagc='git add . && git commit -m'
+   gagc='git add . && git commit -m' \
+   gstat='git status' \
+   gl='git log'
    
 # curl related aliases
 alias \
