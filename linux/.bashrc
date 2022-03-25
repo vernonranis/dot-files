@@ -204,7 +204,8 @@ alias \
    m='minikube' \
    mstat='minikube status' \
    mdenv='eval $(minikube -p minikube docker-env)' \
-   mdenvu='eval $(minikube -p minikube docker-env --unset)'
+   mdenvu='eval $(minikube -p minikube docker-env --unset)' \
+   mssh='minikube ssh'
    
 # git related aliases
 alias \
