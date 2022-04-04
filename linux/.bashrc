@@ -217,7 +217,8 @@ alias \
    gc='git clone' \
    gagc='git add . && git commit -m' \
    gstat='git status' \
-   gl='git log'
+   gl='git log' \
+   gpo='git push origin -u'
    
 # curl related aliases
 alias \
