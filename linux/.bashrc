@@ -234,3 +234,4 @@ bind '"\e[B": history-search-forward'
 #bind 'TAB:menu-complete'
 
 #set -o vi
+eval "$(starship init bash)"
